@@ -1,14 +1,40 @@
-Posts on Qiita
+Tool for Qiita
 =====
 
-* [SAKURAの共有サーバで環境変数を使う](http://qiita.com/items/e74cfee1af8ef16278a5 "see on Qiita")
-* [PHPスクリプトを直接起動しないための.htaccess](http://qiita.com/items/399958a166c51f242d27 "see on Qiita")
-* [CSS内の画像埋込で高速化(Data URI)](http://qiita.com/items/3134467210e0022f4a02 "see on Qiita")
-* [FQLで関連する複数クエリを実行する](http://qiita.com/items/fec2fec6cb3bf5ab0cce "see on Qiita")
-* [FQLで非indexableカラムを検索条件に加える方法](http://qiita.com/items/1af899e5a5b21472189d "see on Qiita")
-* [ISO8601形式の時刻をUNIXタイムスタンプに](http://qiita.com/items/7ea04db3222ef068a4bb "see on Qiita")
-* [HTML5 Canvasの描画メソッドを拡張](http://qiita.com/items/94dd6f98d8d5f285c7fc "see on Qiita")
-* [Herokuの共有データベースにNavicatから接続する](http://qiita.com/items/96749c0e099f516303f0 "see on Qiita")
-* [SimpleXMLのデータはvar_dumpで見えない! (こともある)](http://qiita.com/items/fe52b708777145402330 "see on Qiita")
-* [直近5件のFacebookイベントをFQLで取って来る](http://qiita.com/items/cdb5a05583ee429c5c40 "see on Qiita")
-* [Hello Slim!](http://qiita.com/items/ee07a3d859351b578b0c "see on Qiita")
+Qiitaへの投稿をGitHubにバックアップするスクリプト。(for Mac)
+
+##はじめに
+
+* Kobitoを利用して投稿しているものとします。
+* PHPのコマンドライン版が使えること。(シェル版もそのうち公開されるかも)
+
+##使い方
+
+0. まず、自分のGitHubに新規にリポジトリを作成します。
+	* "Repository Name"を「Qiita」に。(別の名称でも構わないですが、以降適宜読み替えて下さい)
+	* "Initialize this repository with a README"のオプションをチェック。
+	* "Create Repository"をクリック。
+0. Macにクローン。
+	* "Clone in Mac"ボタンをクリック。
+0. 次のコマンドを実行。
+
+```sh
+$ cd ~/github/Qiita
+$ curl -s https://raw.github.com/cognitom/Qiita/tool/update.php | php
+```
+
+##Appendix
+
+### Q. Gitでユーザ名・パスワードを聞かれてめんどくさい
+A. GitのモードがHTTPになっているのかも。次のコマンドでSSHに切り替えると、いちいち聞かれなくなるはず。
+
+```
+git config remote.origin.url git@github.com:your_user_name/repository_name.git
+```
+
+###Q. 毎回curlでダウンロードするのもどうかと...
+A. 適当なところに[ダウンロード](https://raw.github.com/cognitom/Qiita/tool/update.php)して使って下さい。ダウンロードしたら、↓こんな感じで。
+
+```
+$ php ./update.php
+```

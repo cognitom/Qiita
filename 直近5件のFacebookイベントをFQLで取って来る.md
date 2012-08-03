@@ -2,8 +2,6 @@
 
 Graph APIだと取れないものがあったりするので、FQLを使うサンプル。
 
-**2012/4/24現在、API仕様の変更でこのままだと上手くいかず。調査中。**
-
 ```php
 <?php
 function get_events ($fid, $appid, $secret, $limit = 5) {

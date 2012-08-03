@@ -36,5 +36,6 @@ file_put_contents("$dir/README.md", $md);
 //GitHubにコミット
 echo "\nConnecting to GitHub...\n";
 chdir($dir);
+exec("git add -A");
 exec("git commit -a -m '$message'");
 exec("git push origin master");

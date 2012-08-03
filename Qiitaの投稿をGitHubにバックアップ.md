@@ -26,6 +26,8 @@ $ cd ~/github/Qiita
 $ curl -s https://raw.github.com/cognitom/Qiita/tool/update.php | php
 ```
 
+※実行そのものも自動化したい場合は、dailyとかでcronを回して下さい。
+
 ##注意
 コマンドを実行すると、カレントディレクトリの内容を一旦削除して、KobitoのデータベースからMarkdownファイルを再構築します。なので、必ずリポジトリのディレクトリに移動してから、実行すること。
 
@@ -81,6 +83,7 @@ file_put_contents("$dir/README.md", $md);
 //GitHubにコミット
 echo "\nConnecting to GitHub...\n";
 chdir($dir);
+exec("git add -A");
 exec("git commit -a -m '$message'");
 exec("git push origin master");
 ```

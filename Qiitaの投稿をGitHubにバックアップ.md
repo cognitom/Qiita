@@ -4,6 +4,8 @@
 
 Qiita + Kobito への依存度が上がるにつれて、気になるのがバックアップ。そこで、Qiitaへの投稿をサクッとGitHubにバックアップするスクリプトを作りました。(for Mac)
 
+* 例: [cognitom/Qiita](https://github.com/cognitom/Qiita) *←こんな感じにGitHubにコミットされます。*
+
 ##はじめに (前提条件)
 
 * Kobitoを利用して投稿していること。

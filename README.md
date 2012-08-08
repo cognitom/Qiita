@@ -1,8 +1,9 @@
 Posts on Qiita
 =====
 
-* [Qiitaの投稿に画像を挿入する](http://qiita.com/items/1ea365f84fb92e19141b "see on Qiita")
+* [Media Templeで環境変数を使う](http://qiita.com/items/25349c978f453ab50fd6 "see on Qiita")
 * [Qiitaの投稿をGitHubにバックアップ](http://qiita.com/items/a98dffc4b1ad095898b1 "see on Qiita")
+* [Qiitaの投稿に画像を挿入する](http://qiita.com/items/1ea365f84fb92e19141b "see on Qiita")
 * [SAKURAの共有サーバで環境変数を使う](http://qiita.com/items/e74cfee1af8ef16278a5 "see on Qiita")
 * [PHPスクリプトを直接起動しないための.htaccess](http://qiita.com/items/399958a166c51f242d27 "see on Qiita")
 * [CSS内の画像埋込で高速化(Data URI)](http://qiita.com/items/3134467210e0022f4a02 "see on Qiita")

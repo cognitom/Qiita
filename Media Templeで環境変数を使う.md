@@ -26,6 +26,7 @@ SetEnv HTTP_DB_PASS "*********"
 通常通りこんな感じで。(PHPの場合)
 
 ```php
+<?php
 $dbname = $_ENV['HTTP_DB_NAME'];//db000000_your_db_name
 $dbuser = $_ENV['HTTP_DB_USER'];//db000000_yourname
 $dbpass = $_ENV['HTTP_DB_PASS'];//*********
@@ -34,6 +35,7 @@ $dbpass = $_ENV['HTTP_DB_PASS'];//*********
 なお、データベースサーバのURIはMedia Temple側で環境変数として用意してくれています。`DATABASE_SERVER`を使いましょう。
 
 ```php
+<?php
 $dbhost = $_ENV['DATABASE_SERVER'];//internal-db.s000000.gridserver.com
 ```
 

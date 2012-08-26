@@ -1,6 +1,7 @@
 Posts on Qiita
 =====
 
+* [シャドウを画像の内側にかけるCSS/jQuery](http://qiita.com/items/ccdab6944e0e28ef841b "see on Qiita")
 * [Media Templeで環境変数を使う](http://qiita.com/items/25349c978f453ab50fd6 "see on Qiita")
 * [Qiitaの投稿をGitHubにバックアップ](http://qiita.com/items/a98dffc4b1ad095898b1 "see on Qiita")
 * [Qiitaの投稿に画像を挿入する](http://qiita.com/items/1ea365f84fb92e19141b "see on Qiita")
